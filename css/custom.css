@@ -1,0 +1,256 @@
+.menu li li a{
+    color:#a3a3a3;
+    text-decoration:none; 
+    word-spacing: 0.099px !important;
+}
+
+/* @media all (max-width:..){
+    h1 img {width: 100px}
+994.40
+
+} */
+
+.frase1{
+
+    font-size: 2em;
+    color: #616161;
+    background-color: #e0e0e0;
+    padding: 20px 40px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 2s ease-in-out, pulse 3s infinite alternate;
+    text-align: center;
+}
+/* .wrapper{
+    width: 20% !important;
+} */
+.founders-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    padding: 60px;
+    border-radius: 25px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin: auto;
+  }
+  
+  .founders-section:hover {
+    transform: scale(1.02); /* Efecto de escala cuando se pasa el mouse */
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: #d0d0d0; /* Rosa vibrante para el título */
+    margin-bottom: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .founders-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .founder-card {
+    background-color: #f17e95; /* Rosa fuerte para las tarjetas */
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .founder-card:hover {
+    transform: translateY(-15px); /* Efecto de hover */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background-color: #ff3366; /* Cambio de color en hover */
+  }
+  
+  .founder-image-wrapper {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 6px solid #fff; 
+  }    
+    /* Borde blanco grueso */
+
+  .founder-card:hover .founder-image-wrapper {
+    transform: scale(1.1); /* Aumento de imagen en hover */
+  }
+  
+  .founder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .founder-card:hover .founder-image {
+    opacity: 0.8; /* Efecto de transparencia en la imagen al pasar el mouse */
+  }
+  
+  .founder-name {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .founder-role {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  
+  .fransition{ 
+    transform 0.3s ease;
+  }
+  .founder-description {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 15px;
+    opacity: 0.8;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .founder-container{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-card {
+      max-width: 90%;
+      margin-bottom: 40px;
+    }
+}
+/* Contenedor principal */
+.contact-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(255, 120, 200, 0.4);
+    backdrop-filter: blur(12px);
+    max-width: 700px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+    margin:auto;
+    margin-top: 15px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+.contact-container h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+/* Subtítulo */
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Diseño de las tarjetas */
+.contact-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de contacto */
+.contact-card {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(255, 80, 150, 0.3);
+    width: 200px;
+    background: linear-gradient(135deg, #ff99cc, #ff66b2);
+    color: white;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(255, 80, 150, 0.5);
+}
+
+/* Iconos */
+.contact-card i {
+    font-size: 35px;
+    margin-bottom: 12px;
+    color: #ff1493;
+}
+
+/* Títulos en tarjetas */
+.contact-card h3 {
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+/* Descripción */
+.contact-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Links */
+.contact-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-card a:hover {
+    color: #ff5ec4;
+    text-decoration: underline;
+}
+
+/* Personalización de colores */
+.instagram {
+    background: linear-gradient(135deg, #ff99cc, #ff66b2);
+    color: white;
+}
+
+.instagram i, .instagram a {
+    color: white;
+}
+
+.tiktok {
+    background: linear-gradient(135deg, #ffbbdd, #ff77cc);
+    color: white;
+}
+
+.tiktok i, .tiktok a {
+    color: white;
+}
+.pepito{
+    font-size: ;
+}
